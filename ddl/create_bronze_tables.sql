@@ -1,3 +1,5 @@
+-- CRM tables
+
 create table belong_iceberg_catalog.bronze.crm_cust_info
 (
 cst_id integer,
@@ -31,5 +33,30 @@ sls_due_dt integer,
 sls_sales double,
 sls_quantity integer,
 sls_price double
+);
+
+
+--- ERP tables
+
+create table belong_iceberg_catalog.bronze.erp_cust_az12
+(
+cid varchar,
+bdate date,
+gen varchar
+);
+
+create table belong_iceberg_catalog.bronze.erp_loc_a101
+(
+cid varchar,
+cntry varchar
+);
+
+
+create table belong_iceberg_catalog.bronze.erp_px_cat_g1v2
+(
+id varchar,
+cat varchar,
+subcat varchar,
+maintenance varchar
 );
 
