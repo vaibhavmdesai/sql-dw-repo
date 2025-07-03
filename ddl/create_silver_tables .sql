@@ -15,6 +15,7 @@ dwh_create_date timestamp(6)
 create table belong_iceberg_catalog.silver.crm_prd_info
 (
 prd_id integer,
+cat_id varchar,
 prd_key varchar,
 prd_nm varchar,
 prd_cost double,
