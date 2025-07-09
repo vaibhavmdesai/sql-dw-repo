@@ -1,0 +1,12 @@
+HIVE_URI = 'thrift://hive-metastore:9083'
+MINIO_ACCESS_KEY = 'FrmF5fXO0bxpBepjVUSX'
+MINIO_SECRET_KEY = '5RgPTIToiUPa16HAWnRv3KcsE7y21Oo3RPA3QXTb'
+MINIO_ENDPOINT = "http://minio:9000"
+MINIO_DATA_BUCKET = "warehouse"
+MINIO_LOGS_BUCKET = "logs"
+BRONZE_SCHEMA = "bronze"
+SILVER_SCHEMA = "silver"
+GOLD_SCHEMA = "gold"
+TABLE_FORMAT = "iceberg"
+ICEBERG_CATALOG = "belong_catalog"
+INSERT_MODE = "overwrite"
