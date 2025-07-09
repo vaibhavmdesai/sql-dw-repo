@@ -29,3 +29,19 @@ product_line varchar,
 start_date varchar,
 dwh_load_date timestamp(6)
 );
+
+
+CREATE TABLE belong_iceberg_catalog.gold.fact_sales (
+   sls_ord_num varchar,
+   product_key integer,
+   customer_key integer,
+   sls_order_dt date,
+   sls_ship_dt date,
+   sls_due_dt date,
+   sls_sales double,
+   sls_quantity integer,
+   sls_price double
+)
+WITH (
+   format = 'PARQUET'
+)
